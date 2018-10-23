@@ -30,4 +30,4 @@ async def auto(ctx):
     for i in range (0,10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000):
         await bot.say("Make Sure To Check Our Website: https://growtopiaprivate.000webhostapp.com/ dont have growtopia 2.982? : gg.gg/growtopiainstaller")
 
-bot.run ("Token")
+bot.run ("NTA0MzQ1OTc0NDc1MzI1NDUx.DrDsXQ.kZi9TN6hGEk7IM9AFXp3itBghSM")
