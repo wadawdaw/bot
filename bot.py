@@ -73,6 +73,7 @@ async def connect(ctx):
 	embed.add_field(name='/whomade', value='Shows owner of bot', inline='False'
 	embed.add_field(name='/info', value='Shows info of bot', inline='False'
 
+	await client.send_message(author, embed=embed)
 #command4
 @client.command(pass_context = True)
 async def disconnect(ctx):
