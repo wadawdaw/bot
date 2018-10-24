@@ -6,7 +6,6 @@ from discord.ext import commands
 Client = discord.Client()
 bot_prefix= "/"
 client = commands.Bot(command_prefix=bot_prefix)
-client.remove_command('help')
  
 @client.event
 async def on_ready():
@@ -51,29 +50,7 @@ async def connect(ctx):
     author = ctx.message.author
     voice_channel = author.voice_channel
     vc = await client.join_voice_channel(voice_channel)
- 
-@client.command(pass_context=True)
-async def connect(ctx):
-	author = ctx.message.author
-	
-	embed = discord.embed(
-		colour = discord.Colour.orange()
-	)
-	
-	embed.set_author(name='OG Bot Commands')
-	embed.add_field(name='/ban', value='Ban user', inline='False'
-	embed.add_field(name='/kick', value='Kick user', inline='False'
-	embed.add_field(name='/getbans', value='shows everyban on server', inline='False'
-	embed.add_field(name='/invite', value='shows every invite on server', inline='False'
-	embed.add_field(name='/rules', value='shows server rules', inline='False'
-	embed.add_field(name='/connect', value='connects to voice channel', inline='False'
-	embed.add_field(name='/disconnect', value='disconnect from voice channel', inline='False'
-	embed.add_field(name='/clear', value='clears chat from channel', inline='False'
-	embed.add_field(name='/listservers', value='Shows server thats bot is in', inline='False'
-	embed.add_field(name='/whomade', value='Shows owner of bot', inline='False'
-	embed.add_field(name='/info', value='Shows info of bot', inline='False'
 
-	await client.send_message(author, embed=embed)
 #command4
 @client.command(pass_context = True)
 async def disconnect(ctx):
