@@ -9,7 +9,7 @@ import random
 import asyncio
 import time
 
-bot = commands.Bot(command_prefix='<')
+bot = commands.Bot(command_prefix='/')
  
 @bot.event
 async def on_ready():
@@ -20,8 +20,8 @@ async def on_ready():
     print("Made By NabzGT")
 
 @bot.command(pass_context=True)
-async def help(ctx):
-    await bot.say("/opcode /join /item <ID> /kick <Permission>")
+async def join(ctx):
+    await bot.say("GPS: gg.gg/growtopiainstaller")
 
 @bot.command(pass_context=True)
 async def madeby(ctx):
