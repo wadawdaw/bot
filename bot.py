@@ -18,19 +18,13 @@ async def on_ready():
 @client.command(pass_context=True)
 async def rules(ctx):
     await client.say("""**
-===========
-Rules of BLiTZ
-===========
+========================================
 - Do not impersonating People
 - Do not spam
 - Do not swearing
 - Do not say inappropriate words 
-- Do not talk about hacking Here!
-- Do not send .exe files [insult banned]
 - Do not bullying others
-====================
-Last edited : Fri, August 31.
-====================""")
+========================================**""")
 #command1
 @client.command(pass_context = True)
 async def invite(ctx):
@@ -123,13 +117,12 @@ async def whomade(ctx):
 @client.command(pass_context = True)
 async def info(ctx):
     await client.say("""**Useful Links:**
-Discord Invite: https://discord.gg/n45JcWb
+Discord Invite: https://discord.gg/vxVNFkF
 
-Roles:
-@Owner - Owners Of BLiTZ
-@Co-owners  - Owners but lower level
-@Helpers - helpers who are idiots
-@members - normal memebers
+Invite This Bot: https://discordapp.com/oauth2/authorize?client_id=504655132521398292&permissions=8&scope=bot
+
+@Owner - Developer Of OG Bot
+@Co-owners  - Helping Code Bot
 
 Any issues please **PM** @Owners directly.""")
 
