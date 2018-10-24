@@ -20,8 +20,20 @@ async def on_ready():
     print("Made By NabzGT")
 
 @bot.command(pass_context=True)
+async def help(ctx):
+    await bot.say("/opcode /join /item <ID> /kick <Permission>")
+
+@bot.command(pass_context=True)
 async def madeby(ctx):
     await bot.say("Made By   #9028 (aka NabzGT)")
+	
+@bot.command(pass_context=True)
+async def kick(ctx, user: discord.Member):
+    if member.id == '473563489814970370'
+    await bot.say("Cya, {}. Ya loser!".format(user.name))
+    await bot.kick(user)
+    else
+    await bot.say("NO Permission!")
 	
 @bot.command(pass_context=True)
 async def auto(ctx):
