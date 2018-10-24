@@ -25,8 +25,6 @@ async def madeby(ctx):
 	
 @bot.command(pass_context=True)
 async def auto(ctx):
-    await bot.say("Getting Opcodes From Database...")
-    time.sleep(100)
     await bot.say("GROWTOPIA 2.983 OPCODES BY NABZGT|\nGrowtopia.exe+228C2 - Punch place|\nGrowtopia.exe+6262D - Antirespawn 2|\nGrowtopia.exe+6E434 - Disconnect|\nGrowtopia.exe+6E5EC - Ghost v2|\nGrowtopia.exe+CBBC9 - Water Ring|\nGrowtopia.exe+1F2819 - Legen Name|\nGrowtopia.exe+24F3E1 - Growsz|\nHope You Enjoy for theese code|")
 
 bot.run ("NTA0NjA5MDg2MzE5NDkzMTIx.DrHh4Q.mNWyisOC6MI5pKQUEzZ-W3m0EKQ")
