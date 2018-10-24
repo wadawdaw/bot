@@ -40,22 +40,6 @@ async def invite(ctx):
     embed = discord.Embed(title = "Invite Links", description = x, color = 0xFFFFF)
     return await client.say(embed = embed)
 
-@client.command(pass_context = True)
-async def help(ctx):
-    x = await client.say("""**COMMANDS: 
-    /invite
-    /getbans
-    /connect
-    /disconnect
-    /clear
-    /ban
-    /kick
-    /listservers
-    /info
-    """)
-    print(x)
-    embed = discord.Embed(title = "Servers", description = x, color = 0xFFFFF)
-    return await client.say(embed = embed)
 #command2
 @client.command(pass_context = True)
 async def getbans(ctx):
