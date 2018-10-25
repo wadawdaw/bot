@@ -6,6 +6,7 @@ from discord.ext import commands
 Client = discord.Client()
 bot_prefix= "/"
 client = commands.Bot(command_prefix=bot_prefix)
+client.remove_command('help')
  
 @client.event
 async def on_ready():
@@ -107,6 +108,12 @@ async def listservers(ctx):
     x = '\n'.join([str(server) for server in client.servers])
     print(x)
     embed = discord.Embed(title = "Servers", description = x, color = 0xFFFFF)
+    return await client.say(embed = embed)
+
+@client.command(pass_context=True)
+async def rules(ctx):
+    x = **/HELP**
+    embed = discord.Embed(title = "OG BOT COMMANDS", description = x, color = 0xFFFFF)
     return await client.say(embed = embed)
 
 @client.command(pass_context=True)
