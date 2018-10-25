@@ -37,7 +37,7 @@ async def invite(ctx):
 @client.event
 async def on_member_join(member):
     print('Recognised that a member called ' + member.name + ' joined')
-    await client.send_message(member, 'Welcome To @&s Server!')
+    await client.send_message(member, 'Welcome To @&s To Server!')
     print('Sent message to ' + member.name)
 
 #command2
