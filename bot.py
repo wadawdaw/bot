@@ -34,6 +34,12 @@ async def invite(ctx):
     embed = discord.Embed(title = "Invite Links", description = x, color = 0xFFFFF)
     return await client.say(embed = embed)
 
+@client.event
+async def on_member_join(member):
+    print('Recognised that a member called ' + member.name + ' joined')
+    await client.send_message(member, 'Welcome To @&s Server!')
+    print('Sent message to ' + member.name)
+
 #command2
 @client.command(pass_context = True)
 async def getbans(ctx):
@@ -100,6 +106,19 @@ async def kick(ctx, *, member : discord.Member = None):
 
     embed = discord.Embed(description = "**%s** has been kicked!"%member.name, color = 0xFF0000)
     return await client.say(embed = embed)
+
+@client.event
+async def on_message(message):
+    if ('fuck') in message.content:
+       await client.delete_message(message)
+    if ('bitch') in message.content:
+       await client.delete_message(message)
+    if ('blitz') in message.content:
+       await client.delete_message(message)
+    if ('dls') in message.content:
+       await client.delete_message(message)
+    if message.content.startswith('ping'):
+        await client.send_message(message.channel,'Pong! @&s'  %(message.author.id))
 
 #command8
 @client.command(pass_context = True)
