@@ -6,7 +6,6 @@ from discord.ext import commands
 Client = discord.Client()
 bot_prefix= "/"
 client = commands.Bot(command_prefix=bot_prefix)
-client.remove_command('help')
  
 @client.event
 async def on_ready():
@@ -109,17 +108,6 @@ async def listservers(ctx):
     print(x)
     embed = discord.Embed(title = "Servers", description = x, color = 0xFFFFF)
     return await client.say(embed = embed)
-
-@client.command(pass_context=True)
-async def help(ctx):
-	author = ctx.message.author
-	
-    embed = discord.embed(
-	colour = discord.Colour.orange()
-    )
-
-    embed.set_author(name='Test'
-    embed.add_field(name='test cmd', value='noob cmd', inline=False)
 
 @client.command(pass_context=True)
 async def whomade(ctx):
