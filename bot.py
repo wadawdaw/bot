@@ -112,9 +112,14 @@ async def listservers(ctx):
 
 @client.command(pass_context=True)
 async def rules(ctx):
-    x = **/HELP**
-    embed = discord.Embed(title = "OG BOT COMMANDS", description = x, color = 0xFFFFF)
-    return await client.say(embed = embed)
+	author = ctx.message.author
+	
+    embed = discord.embed(
+	colour = discord.Colour.orange()
+    )
+
+    embed.set_author(name='Test'
+    embed.add_field(name='test cmd', value='noob cmd', inline=False)
 
 @client.command(pass_context=True)
 async def whomade(ctx):
