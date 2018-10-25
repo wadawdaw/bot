@@ -127,4 +127,4 @@ Invite This Bot: https://discordapp.com/oauth2/authorize?client_id=5046551325213
 Any issues please **PM** @Owners directly.""")
 
       
-client.run("NTA0NjU1MTMyNTIxMzk4Mjky.DrIMWA.-UWGkKteGkf-YqCZSxFP9jLqn6o")
+client.run("NTA0OTU3MDg5OTE1OTk0MTEz.DrMloQ.mHa0m98WjoKWwNPXJJ99tREcbrs")
