@@ -111,7 +111,7 @@ async def listservers(ctx):
     return await client.say(embed = embed)
 
 @client.command(pass_context=True)
-async def rules(ctx):
+async def help(ctx):
 	author = ctx.message.author
 	
     embed = discord.embed(
